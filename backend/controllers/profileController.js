@@ -1,9 +1,6 @@
 const { body, validationResult } = require('express-validator');
 const User = require('../models/User');
 
-// @desc    Get current user profile
-// @route   GET /api/v1/me
-// @access  Private
 const getProfile = async (req, res) => {
     try {
         const user = await User.findById(req.user._id);
@@ -34,17 +31,12 @@ const getProfile = async (req, res) => {
     }
 };
 
-// @desc    Update user profile
-// @route   PUT /api/v1/me
-// @access  Private
 const updateProfile = [
-    // Validation middleware
     body('name').optional().trim().notEmpty().withMessage('Name cannot be empty'),
     body('email').optional().isEmail().normalizeEmail().withMessage('Please provide a valid email'),
 
     async (req, res) => {
         try {
-            // Check validation errors
             const errors = validationResult(req);
             if (!errors.isEmpty()) {
                 return res.status(400).json({
@@ -61,7 +53,6 @@ const updateProfile = [
 
             if (name) updateFields.name = name;
             if (email) {
-                // Check if email already exists
                 const existingUser = await User.findOne({ email, _id: { $ne: req.user._id } });
                 if (existingUser) {
                     return res.status(400).json({

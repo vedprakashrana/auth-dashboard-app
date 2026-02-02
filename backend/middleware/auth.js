@@ -3,7 +3,6 @@ const User = require('../models/User');
 
 const auth = async (req, res, next) => {
     try {
-        // Get token from header or cookies
         let token;
 
         if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
@@ -12,7 +11,6 @@ const auth = async (req, res, next) => {
             token = req.cookies.token;
         }
 
-        // Check if token exists
         if (!token) {
             return res.status(401).json({
                 success: false,
@@ -21,10 +19,7 @@ const auth = async (req, res, next) => {
         }
 
         try {
-            // Verify token
             const decoded = jwt.verify(token, process.env.JWT_SECRET);
-
-            // Get user from token
             req.user = await User.findById(decoded.id);
 
             if (!req.user) {
