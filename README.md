@@ -21,14 +21,18 @@ A modern full-stack web application featuring **authentication**, **user profile
 
 ## 📸 Screenshots
 
+### Home Page
+![Home Page](./screenshots/home-page.png)
+
+### Authentication Pages
+![Signup](./screenshots/signup.png)
+![Login](./screenshots/login-page.png)
+
 ### Dashboard - Modern Glassmorphic Design
-![Dashboard](./screenshots/actual-dashboard.png)
+![Dashboard Overview](./screenshots/dashboard-main.png)
 
-### Task Management Interface
-![Dashboard Preview](./screenshots/dashboard.png)
-
-### Authentication
-![Login](./screenshots/login.png)
+### Task Management
+![Task Management](./screenshots/dashboard-tasks.png)
 
 ---
 
