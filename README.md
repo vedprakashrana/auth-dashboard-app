@@ -1,6 +1,36 @@
 # Auth Dashboard Application
 
-A modern full-stack web application featuring authentication, user profiles, and task management with a beautiful UI built using React, TailwindCSS, Node.js, Express, and MongoDB.
+![Banner](./screenshots/banner.png)
+
+<div align="center">
+
+[![React](https://img.shields.io/badge/React-18.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-16+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind-3.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Express](https://img.shields.io/badge/Express-4.18-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![JWT](https://img.shields.io/badge/JWT-Auth-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)](https://jwt.io/)
+
+A modern full-stack web application featuring **authentication**, **user profiles**, and **task management** with a beautiful glassmorphic UI built using React, TailwindCSS, Node.js, Express, and MongoDB.
+
+[Features](#-features) • [Demo](#-screenshots) • [Quick Start](#️-setup-instructions) • [API Docs](#-api-documentation)
+
+</div>
+
+---
+
+## 📸 Screenshots
+
+### Dashboard - Modern Glassmorphic Design
+![Dashboard](./screenshots/actual-dashboard.png)
+
+### Task Management Interface
+![Dashboard Preview](./screenshots/dashboard.png)
+
+### Authentication
+![Login](./screenshots/login.png)
+
+---
 
 ## 🚀 Tech Stack
 
